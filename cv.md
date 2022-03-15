@@ -77,7 +77,6 @@ function timeSun({ sys: { sunrise }, sys: { sunset }, timezone }) {
   const hour = pad(Math.floor(((sunset + timezone) % (60 * 60 * 24)) / (60 * 60)));
   const min = pad(Math.floor(((sunset + timezone) % (60 * 60)) / (60)));
   renderSun(hours, mins, hour, min)
-
 }
 
 function renderSun(sunrise,newSunrise,sunset,newSunset) {
